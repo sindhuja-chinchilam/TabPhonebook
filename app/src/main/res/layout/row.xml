@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/cntctname"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/cntctno"
+        android:layout_below="@+id/cntctname"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/delete"
+        android:layout_alignTop="@+id/cntctname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/icons"
+        android:src="@drawable/ic_delete"
+        android:layout_marginRight="10dp"
+        />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/edit"
+        android:background="@drawable/greenicon"
+        android:src="@drawable/ic_mode_edit"
+        android:layout_alignBottom="@+id/delete"
+        android:layout_toLeftOf="@+id/delete"
+        android:layout_toStartOf="@+id/delete"
+        android:layout_marginRight="40dp"/>
+
+</RelativeLayout>
